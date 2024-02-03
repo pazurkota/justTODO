@@ -1,5 +1,8 @@
 bin/
 obj/
+
+# Rider/ReSharper specified files
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+.idea/.idea.justtodo/.idea/
