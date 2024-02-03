@@ -3,8 +3,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="justtodo.View.MainPage"
-             BackgroundColor="Bisque">
-    <ContentPage.Content>
-        
-    </ContentPage.Content>
+             BackgroundColor="#495057">
+    <VerticalStackLayout Margin="10">
+        <Grid ColumnDefinitions="60, *" ColumnSpacing="10">
+            <Button Grid.Column="0"
+                    HeightRequest="60"
+                    BackgroundColor="#ADB5BD"
+                    CornerRadius="8"/>
+            
+            <BoxView Grid.Column="1"
+                     HeightRequest="60"
+                     HorizontalOptions="Fill"
+                     Color="#ADB5BD"
+                     CornerRadius="8"/>
+            
+            <Entry Grid.Column="1"
+                   HeightRequest="60"
+                   HorizontalOptions="Fill"/>
+        </Grid>
+    </VerticalStackLayout>
 </ContentPage>
